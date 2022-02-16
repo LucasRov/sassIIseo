@@ -1,0 +1,56 @@
+
+
+//los extends son aplicados a la page portafolio
+
+%fondo-cliente{
+    background: $celeste-opacidad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+%media-clientes{
+    @media screen and (max-width:768px){
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10%;
+        }    
+}
+
+%imagen-principal{
+    width: 25%;
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+%imagen-secundaria{
+    width: 20%;
+    transition: 0.8s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+%texto-cliente{
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: 5%;
+    font-size: calc(0.4em + 1vw);
+    @media screen and (max-width:768px){
+        width: 80%;
+        font-size: 1rem;
+    }
+}
+%caja-imagenes{
+    width: 70%;
+    display: flex;
+    position: relative;
+    align-items: center; 
+    justify-content: center;
+    @media screen and (max-width:768px){
+        width: 100%;
+    }
+}
